@@ -47,14 +47,14 @@ try {
                           });
                           allUserID.push(stringUserID);
 
-  logger(`Load Data Người Dùng Mới - [ UID: ${stringUserID} | NAME: ${singleData.name} ]`, "〘 LOADING DATABASE 〙");
+  logger(`Load New User Data - [ UID: ${stringUserID} | NAME: ${singleData.name} ]`, "〘 LOADING DATABASE 〙");
                       }
                   } catch (e) {
                       console.log(e);
                   }
               }
 
- logger(`Load Data Nhóm Mới - [ TID: ${stringThreadID} | Tên Nhóm: ${setting.threadName} ]`, "〘 LOADING DATABASE 〙");
+ logger(`Load New User Data - [ TID: ${stringThreadID} | Group Name: ${setting.threadName} ]`, "〘 LOADING DATABASE 〙");
           }
 
           if (!allUserID.includes(stringSenderID) || !userName.has(stringSenderID)) {
@@ -67,7 +67,7 @@ try {
               allUserID.push(stringSenderID);
               userName.set(stringSenderID, infoUsers.name);
 
-  logger(`Load Data Người Dùng Mới - [ UID: ${stringSenderID} | NAME: ${infoUsers.name} ]`, "〘 LOADING DATABASE 〙");
+  logger(`Load New User Data - [ UID: ${stringSenderID} | NAME: ${infoUsers.name} ]`, "〘 LOADING DATABASE 〙");
           }
 
    if (!allCurrenciesID.includes(stringSenderID)) {
@@ -84,4 +84,4 @@ try {
       }
   };
 };
-/////////// FIX and MODE BY DONGDEV ///////////
+/////////// FIX and MODE BY RXABDULLAH ///////////
