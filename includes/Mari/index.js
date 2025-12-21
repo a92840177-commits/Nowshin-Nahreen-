@@ -74,7 +74,7 @@ global.Fca = new Object({
                 },
                 "LogFile": {
                     "Use": false,
-                    "Explain": "Record memory usage logs to fix errors. Default location: Horizon_Database/memory.logs"
+                    "Explain": "Record memory usage logs to fix errors. Default location: Maria_Database/memory.logs"
                 }
             }
         },
