@@ -3,30 +3,25 @@
   "version": "3.0.0",
   "description": "Project of rX - Maria FCA Messenger Bot",
   "main": "index.js",
+
   "scripts": {
     "start": "node index.js",
     "test": "mocha"
   },
+
   "author": "rX Abdullah",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rxabdullah0007/rx-fca/issues"
-  },
-  "homepage": "https://github.com/rxabdullah0007/rx-fca#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rxabdullah0007/rx-fca.git"
-  },
 
   "engines": {
-    "node": "18.x"
+    "node": "18.x",
+    "npm": "9.x"
   },
 
   "dependencies": {
     "aes-js": "^3.1.2",
     "ansi-to-html": "^0.7.2",
     "assert": "^2.1.0",
-    "better-sqlite3": "7.5.3",
+    "better-sqlite3": "7.6.2",
     "bluebird": "^3.7.2",
     "chalk": "4.1.2",
     "cheerio": "1.0.0-rc.12",
@@ -58,31 +53,5 @@
     "eslint": "^8.56.0",
     "mocha": "^10.4.0",
     "prettier": "^3.3.3"
-  },
-
-  "eslintConfig": {
-    "env": {
-      "es6": true,
-      "node": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-      "ecmaVersion": "latest",
-      "sourceType": "script"
-    },
-    "rules": {
-      "linebreak-style": ["error", "unix"],
-      "semi": ["error", "always"],
-      "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
-    }
-  },
-
-  "keywords": [
-    "fca",
-    "fca-maria",
-    "messenger-bot",
-    "facebook-bot",
-    "rx-maria",
-    "mirai-bot"
-  ]
+  }
 }
